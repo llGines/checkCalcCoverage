@@ -1,0 +1,6 @@
+#utils needed for create documentation 
+sphinx==5.3.0
+sphinx-rtd-theme==1.2.0
+myst-parser==0.18
+sphinx-autoapi==2.0.1
+pypandoc_binary==1.10
