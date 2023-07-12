@@ -1,6 +1,6 @@
 import math
 
-class calc():
+class Calc():
 
     """this is just a mere class to try several aspects needed for ipronics job"""
     
@@ -25,7 +25,7 @@ class calc():
 
 if __name__ == "__main__":
 
-    c=calc()
+    c=Calc()
 
     print(c.suma(3,2))
 

@@ -1,6 +1,6 @@
 """test battery"""
 
-import calcClass as calculator
+import Calc as calculator
 
 assert calculator.suma(2,3)
 assert calculator.suma(-2,3)
