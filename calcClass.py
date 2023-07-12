@@ -1,6 +1,6 @@
 import math
 
-class Calc():
+class Calclass():
 
     """this is just a mere class to try several aspects needed for ipronics job"""
     
