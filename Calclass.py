@@ -4,6 +4,7 @@ class Calclass():
 
     """this is just a mere class to try several aspects needed for ipronics job"""
     
+    
     def __init__(self):
         result=0
     
@@ -20,12 +21,13 @@ class Calclass():
     def sqrot(a):
         return  math.sqrt(a)
 
+
         
 
 
 if __name__ == "__main__":
 
-    c=Calc()
+    c=Calclass()
 
     print(c.suma(3,2))
 
