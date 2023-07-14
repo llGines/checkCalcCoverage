@@ -1,11 +1,9 @@
 import math
 
 
-class Calclass():
-
+class Calclass:
     def __init__(self):
         self.data = []
-
 
     def suma(self, a, b):
         return a + b
@@ -24,11 +22,11 @@ class Calclass():
 
     def sqrot(self, a):
         return math.sqrt(a)
-    
+
     print("done")
 
 
-class TestClass():
+class TestClass:
     calc = Calclass()
 
     def test_sum(self):
