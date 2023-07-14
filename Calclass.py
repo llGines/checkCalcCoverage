@@ -24,6 +24,8 @@ class Calclass():
 
     def sqrot(self, a):
         return math.sqrt(a)
+    
+    print("done")
 
 
 class TestClass():
