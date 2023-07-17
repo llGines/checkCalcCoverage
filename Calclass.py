@@ -1,11 +1,11 @@
 import math
 
 
-class Calclass:
+class CalcClass:
     def __init__(self):
         self.data = []
 
-    def suma(self, a, b):
+    def suma(a, b):
         return a + b
 
     def subs(self, a, b):
@@ -18,46 +18,53 @@ class Calclass:
         return a / b
 
     def power(self, a):
+        if False:
+            print("false")
         return pow(a, 2)
 
     def sqrot(self, a):
         return math.sqrt(a)
-
+    
     print("done")
 
 
-class TestClass:
-    calc = Calclass()
+# class TestClass:
+# calc = CalcClass()
 
-    def test_sum(self):
-        assert self.calc.suma(3, 2) == 5
-        assert self.calc.suma(3, -3) == 0
+def test_sum():
+    calc = CalcClass()
 
-    def test_subs(self):
-        assert self.calc.subs(4, 2) == 2
-        assert self.calc.subs(0, 3) == -3
+    assert calc.suma(3, 2) == 5
+    assert calc.suma(3, -3) == 0
 
-    def test_mult(self):
-        assert self.calc.mult(8, 2) == 16
-        assert self.calc.mult(5, 0) == 0
-        assert self.calc.mult(8, -1) == -8
+def test_subs():
+    calc = CalcClass()
 
-    def test_div(self):
-        assert self.calc.div(4, 2) == 2
-        assert self.calc.div(2, 2) == 1
-        assert self.calc.div(1, 2) == 0.5
+    assert calc.subs(4, 2) == 2
+    assert calc.subs(0, 3) == -3
 
-    def test_power(self):
-        assert self.calc.power(2) == 4
-        assert self.calc.power(0) == 0
+def test_mult():
+    calc = CalcClass()
 
-    def test_sqrot(self):
-        assert self.calc.sqrot(16) == 4
-        assert self.calc.sqrot(-4) == 4
+    assert calc.mult(8, 2) == 16
+    assert calc.mult(5, 0) == 0
+    assert calc.mult(8, -1) == -8
+
+def test_div():
+    calc = CalcClass()
+
+    assert calc.div(4, 2) ==2
+    assert calc.div(2, 2) == 1
+    assert calc.div(1, 2) == 0.5
+
+def test_power():
+    calc = CalcClass()
+
+    assert calc.power(2) == 4
+    assert calc.power(0) == 0
 
 
-# if __name__ == "__main__":
-
-#     c=Calclass()
-
-#     print(c.suma(3,2))
+def test_sqrot():
+    calc = CalcClass()
+    assert calc.sqrot(16) == 4
+    assert calc.sqrot(4) == 2
