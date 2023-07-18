@@ -12,12 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Get Cover 
-        uses: orgoro/coverage@v3.1
-        run: pytest --cov-report xml:/home/lluis/prog/calcClass/testResult.xml
-        with:
-            coverageFile: /home/lluis/prog/calcClass/testResult.xml
-            token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
