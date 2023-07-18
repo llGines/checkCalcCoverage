@@ -22,6 +22,6 @@ assert calculator.power(8)
 
 assert calculator.sqrot(4)
 assert calculator.sqrot(3)
-assert calculator.sqrot(4)
+assert calculator.sqrot(9)
 assert calculator.sqrot(2)
 
