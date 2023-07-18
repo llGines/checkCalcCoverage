@@ -8,7 +8,7 @@ class Calclass:
     def suma(a, b):
         return a + b
 
-    def subs(self, a, b):
+    def subs( a, b):
         return a - b
 
     def mult(a, b):
