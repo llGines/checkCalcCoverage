@@ -1,4 +1,4 @@
- 
+import math
 
 class Calclass:
     # def __init__(self):
@@ -17,7 +17,7 @@ class Calclass:
         return a / b
 
     def power(a):
-        if a>100:
+        if a<100:
             print("false")
         return pow(a, 2)
 

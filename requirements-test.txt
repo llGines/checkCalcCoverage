@@ -1,0 +1,8 @@
+pytest==7.1.2
+pytest-cov==3.0.0
+pytest-xdist==2.5.0
+pytest-forked==1.4.0 ; sys_platform != "Windows"
+pytest-allclose==1.0.0
+pytest_notebook==0.7.0
+pytest-datafiles==2.0.1
+pytest-mock==3.8.2
