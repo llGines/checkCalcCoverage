@@ -32,4 +32,5 @@ jobs:
           pytest
       - name: test coverage
         run: |
+          #stop the build if coverage test is bellow a certain value
           pytest -s -vv --cov=Calcclass ./calclass/test_calc.py --cov-fail-under=100
