@@ -3,7 +3,7 @@
 from Calcclass import Calclass as calculator  
 
 def test_func():
-    assert calculator.suma(2,3)==6
+    assert calculator.suma(2,3)==5
     assert calculator.suma(-2,3)==1
     assert calculator.suma(0,3)==3
 
