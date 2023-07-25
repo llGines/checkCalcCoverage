@@ -30,3 +30,6 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
+      - name: test coverage
+        run: |
+          pytest -s -vv --cov=Calcclass ./calclass/test_calc.py --cov-fail-under=100

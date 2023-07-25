@@ -19,7 +19,7 @@ class Calclass:
 
     def power(a):
         if a>100:
-            print("false")
+            print("in")
         return pow(a, 2)
 
     def sqrot(a):
