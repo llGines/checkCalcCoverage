@@ -1,5 +1,5 @@
 import math
-import numpy
+
 
 class Calclass:
     # def __init__(self):
