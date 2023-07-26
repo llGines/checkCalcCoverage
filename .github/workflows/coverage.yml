@@ -9,8 +9,8 @@ jobs:
 
           - name: do test
             run:
-              pip install pytest-cov
-              pip install coverage
+              #pip install pytest-cov
+              #pip install coverage
               pytest -s --cov=Calcclass ./calclass/test_calc.py --cov-report xml
               coverage xml .github/workflows/coverage.xml
           - name: Get Cover 
