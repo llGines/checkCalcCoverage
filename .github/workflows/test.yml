@@ -36,7 +36,7 @@ jobs:
           pip install pytest-cov
           pytest -s -vv --cov=Calcclass ./calclass/test_calc.py  ./ --cov-report xml:./calclass
       - name: Get Cover 
-            uses: orgoro/coverage@v3.1
+          uses: orgoro/coverage@v3.1
           with:
               coverageFile: ./calclass
               token: ${{ secrets.GITHUB_TOKEN }}
