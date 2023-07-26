@@ -33,7 +33,7 @@ jobs:
       - name: test coverage
         run: |
           #stop the build if coverage test is bellow a certain value
-          #pip install pytest-cov
+          pip install pytest-cov
           pytest -s -vv --cov=Calcclass ./calclass/test_calc.py --cov-report xml
           coverage xml .github/workflows/coverage.xml
       - name: Get Cover 
