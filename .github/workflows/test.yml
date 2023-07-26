@@ -38,6 +38,6 @@ jobs:
       - name: Get Cover 
           uses: orgoro/coverage@v3.1
           with:
-              coverageFile: ./calclass
-              token: ${{ secrets.GITHUB_TOKEN }}
+            coverageFile: ./calclass
+            token: ${{ secrets.GITHUB_TOKEN }}
           
