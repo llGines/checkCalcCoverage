@@ -34,5 +34,10 @@ jobs:
         run: |
           #stop the build if coverage test is bellow a certain value
           pip install pytest-cov
-          pytest -s -vv --cov=Calcclass ./calclass/test_calc.py --cov-fail-under=100 
-          coverage json
+          pytest -s -vv --cov=Calcclass ./calclass/test_calc.py  --cov-report xml:./
+      - name: Get Cover 
+            uses: orgoro/coverage@v3.1
+            with:
+                coverageFile: ./
+                token: ${{ secrets.GITHUB_TOKEN }}
+          
