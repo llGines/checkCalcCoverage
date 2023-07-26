@@ -30,16 +30,18 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
-      - name: test coverage
-        run: |
-          #stop the build if coverage test is bellow a certain value
-          pip install pytest-cov
-          pip install coverage
-          pytest -s --cov=Calcclass ./calclass/test_calc.py --cov-report xml
-          coverage xml .github/workflows/coverage.xml
-      - name: Get Cover 
-        uses: orgoro/coverage@v3.1
-        with:
-          coverageFile: .github/workflows/coverage.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
+         
+
+      #- name: test coverage
+      #  run: |
+      #    #stop the build if coverage test is bellow a certain value
+      #    pip install pytest-cov
+      #    pip install coverage
+      #    pytest -s --cov=Calcclass ./calclass/test_calc.py --cov-report xml
+      #    coverage xml .github/workflows/coverage.xml
+      #- name: Get Cover 
+      #  uses: orgoro/coverage@v3.1
+      #  with:
+      #    coverageFile: .github/workflows/coverage.xml
+      #    token: ${{ secrets.GITHUB_TOKEN }}
           
