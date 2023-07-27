@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test with pytest
-      run: |
-        pip install pytest pytest-cov
-        pytest --cov=Calcclass test_calc --cov-report xml:.github/workflows/coverage.xml 
+        run: |
+          pip install pytest pytest-cov
+          pytest --cov=Calcclass test_calc --cov-report xml:.github/workflows/coverage.xml 
       - name: Get Cover 
         uses: orgoro/coverage@v3.1
         with:
-            coverageFile: .github/workflows/coverage.xml
-            token: ${{ secrets.GITHUB_TOKEN }}
+          coverageFile: .github/workflows/coverage.xml
+          token: ${{ secrets.GITHUB_TOKEN }}
