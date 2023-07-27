@@ -1,0 +1,29 @@
+[project]
+name = "mycalc"
+dynamic = ["version"]
+
+description = "calclass"
+requires-python = ">=3.9"
+authors = [{name="Lluis", email="lluis.gines@ipronics.com"}]
+dependencies = [
+    'pytest',
+    'pytest-cov',
+    'pytest-xdist',
+    'pytest-forked ; sys_platform != "Windows"',
+    'pytest-allclose',
+    'pytest-datafiles',
+    'pytest-mock',
+    'black',
+    'ruff',
+]
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+
+[tool.setuptools_scm]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
