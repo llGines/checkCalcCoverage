@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install ruff pytest
+          pip install ruff pytest pytest-cov
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with ruff
         run: |
@@ -29,7 +29,8 @@ jobs:
           ruff --format=github --target-version=py37 .
       - name: Test with pytest
         run: |
-          pytest
+          pytest -s -vv -n8 --forked --cov=Calcclass test_calc --cov-report xml:.github/workflows/coverage.xml
+
          
 
       #- name: test coverage
