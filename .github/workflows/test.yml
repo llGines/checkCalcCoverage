@@ -35,8 +35,8 @@ jobs:
       - run: npm install
       - run: npm run test
       - name: run pytest
-          run: coverage run -m pytest 
-          run: coverage json
+        run: coverage run -m pytest 
+        run: coverage json
       - name: Coverage Diff
         uses: greatwizard/coverage-diff-action@v1
         with:
