@@ -1,18 +1,10 @@
 name: lint
 on: [pull_request]
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: "3.9"
-          cache: "pip"
-          cache-dependency-path: requirements-lint.txt  
-      - uses: chartboost/ruff-action@v1
-      - name: Install dependencies
-        run: python -m pip install -r requirements-lint.txt
-      - name: black
-        run: black . --check
-   
+ lint:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v3
+     - uses: psf/black@stable
+     - uses: chartboost/ruff-action@v1
+(calc) lluis@ll:~/prog/calcClass$ pytest -vv  ./test --cov-report 
