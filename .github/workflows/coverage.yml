@@ -8,8 +8,8 @@ jobs:
         steps:
           - name: Test with pytest
           run: |
-          pip install pytest pytest-cov
-           pytest --cov=Calcclass test_calc --cov-report xml:.github/workflows/coverage.xml
+            pip install pytest pytest-cov
+            pytest --cov=Calcclass test_calc --cov-report xml:.github/workflows/coverage.xml
 
         
           - name: Get Cover 
