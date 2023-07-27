@@ -4,7 +4,6 @@ import math
 class Calclass:
     # def __init__(self):
 
-
     def suma(a, b):
         return a + b
 
@@ -18,7 +17,7 @@ class Calclass:
         return a / b
 
     def power(a):
-        if a>100:
+        if a > 100:
             print("in")
         return pow(a, 2)
 
