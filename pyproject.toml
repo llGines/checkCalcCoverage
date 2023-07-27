@@ -13,6 +13,8 @@ dependencies = [
     'pytest-allclose',
     'pytest-datafiles',
     'pytest-mock',
+    'black',
+    'ruff',
 ]
 
 [build-system]
