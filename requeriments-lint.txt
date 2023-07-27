@@ -1,0 +1,4 @@
+#utils for linting
+flake8==4.0.1
+black[jupyter]==22.3.0
+isort==5.10.1
