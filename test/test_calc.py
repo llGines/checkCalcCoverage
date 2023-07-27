@@ -1,6 +1,6 @@
 # """test battery"""
 
-from Calcclass import Calclass as calculator  
+from mycalc import Calcclass as calculator  
 
 def test_func():
     assert calculator.suma(2,3)==5
