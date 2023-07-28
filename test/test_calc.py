@@ -25,12 +25,10 @@ def test_func():
     assert cal1.power(2) == 4
     assert cal2.power(-2) == 4
     assert cal3.power(1) == 1
-    
 
     assert cal1.sqrot(4) == 2
     assert cal2.sqrot(9) == 3
     assert cal3.sqrot(9) == 3
-    
 
 
 print("DONE")

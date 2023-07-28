@@ -4,4 +4,4 @@ from .calc3 import Calclass3
 
 
 # allow to import CalclassX when "from mycalc import *"
-__all__ = ["Calclass", "Calclass2", "Calclas3"]
+__all__ = ["Calclass1", "Calclass2", "Calclass3"]
