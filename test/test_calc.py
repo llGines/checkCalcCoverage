@@ -1,6 +1,6 @@
 # """test battery"""
 
-from mycalc import Calclass as calculator
+from mycalc import Calclass,calc2,calc3 as calculator
 
 
 def test_func():
@@ -29,4 +29,4 @@ def test_func():
     assert calculator.sqrot(25) == 5
 
 
-print("DONE!")
+print("DONE")
