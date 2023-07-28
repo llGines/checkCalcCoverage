@@ -1,0 +1,2 @@
+[run]
+omit =src/mycalc/__init__.py
