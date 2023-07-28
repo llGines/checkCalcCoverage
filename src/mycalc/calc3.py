@@ -14,6 +14,8 @@ class Calclass3:
         return a * b
 
     def div(a, b):
+        if a > 100:
+            print("in")
         return a / b
 
     def power(a):
