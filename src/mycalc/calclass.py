@@ -1,7 +1,7 @@
 import math
 
 
-class Calclass:
+class Calclass1:
     # def __init__(self):
 
     def suma(a, b):
@@ -24,4 +24,4 @@ class Calclass:
     def sqrot(a):
         return math.sqrt(a)
 
-    # print("done")
+    print("done1")

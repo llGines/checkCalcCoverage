@@ -1,6 +1,6 @@
 # """test battery"""
 
-from mycalc import Calclass,calc2,calc3 as calculator
+from mycalc import Calclass, calc2, calc3 as calculator
 
 
 def test_func():
