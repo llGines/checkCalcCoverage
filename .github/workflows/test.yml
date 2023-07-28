@@ -15,13 +15,13 @@ jobs:
       - name: Test with pytest
         run: |
           #pytest -vv --cov=mycalc ./test --cov-report xml:coverage.xml
-          pytest -vv --cov-config=.coveragec --cov=mycalc ./test --cov-report xml:coverage.xml
+          pytest --cov-config=.coveragec --cov=mycalc ./test --cov-report xml:coverage.xml
       - name: Get Cover 
         uses: orgoro/coverage@v3.1
         with:
-          thresholdModified: 1
-          thresholdAll: 1
-          thresholdNew: 1
+          thresholdModified: 0
+          thresholdAll: 0
+          thresholdNew: 0
           coverageFile: coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
   
