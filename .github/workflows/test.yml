@@ -26,5 +26,5 @@ jobs:
 #      - name: Get cover
  #       uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: coverage.xml
+          coverageFile: coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
