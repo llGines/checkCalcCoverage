@@ -7,4 +7,3 @@ jobs:
      - uses: actions/checkout@v3
      - uses: psf/black@stable
      - uses: chartboost/ruff-action@v1
-(calc) lluis@ll:~/prog/calcClass$ pytest -vv  ./test --cov-report 

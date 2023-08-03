@@ -26,4 +26,6 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 [tool.setuptools.packages.find]
 where = ["src"]
 
-
+[tool.coverage]
+run.omit = ["src/mycalc/__init__.py"]
+run.relative = true

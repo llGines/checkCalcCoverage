@@ -1,7 +1,7 @@
 import math
 
 
-class Calclass:
+class Calclass3:
     # def __init__(self):
 
     def suma(a, b):
@@ -14,6 +14,8 @@ class Calclass:
         return a * b
 
     def div(a, b):
+        if a < 100:
+            print("in")
         return a / b
 
     def power(a):
@@ -24,4 +26,4 @@ class Calclass:
     def sqrot(a):
         return math.sqrt(a)
 
-    # print("done")
+    print("done3")
