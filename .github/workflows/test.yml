@@ -15,6 +15,8 @@ jobs:
       - name: Test with pytest
         run: |
           pytest -vv --cov-config=pyproject.toml --cov=mycalc ./test  --cov-report xml:coverage.xml 
+      - name: toDel
+        run: cat coverage.xml
       - name: Get Cover 
         uses: orgoro/coverage@v3.1
         with:
