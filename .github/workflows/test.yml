@@ -14,13 +14,9 @@ jobs:
         run: python -m pip install ./
       - name: Test with pytest
         run: |
-<<<<<<< HEAD
-          pytest -vv --cov-config=pyproject.toml --cov=mycalc ./test  --cov-report xml:coverage.xml 
+          pytest -vv --cov-config=pyproject.toml ./test --cov-report xml:coverage.xml 
       - name: toDel
         run: cat coverage.xml
-=======
-          pytest -vv --cov-config=pyproject.toml ./test --cov-report xml:coverage.xml 
->>>>>>> 5791282 (Project installed)
       - name: Get Cover 
         uses: orgoro/coverage@v3.1
         with:
