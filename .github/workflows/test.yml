@@ -25,3 +25,7 @@ jobs:
           thresholdNew: 0.5
           coverageFile: coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: lcov-reporter
+        uses: romeovs/lcov-reporter-action@v0.2.16
+        with:
+          lcov-file: ./coverage/lcov.info

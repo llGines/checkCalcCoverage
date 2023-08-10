@@ -27,6 +27,6 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 where = ["src"]
 
 [tool.coverage]
-source = ["mycalc"]
+#source = ["/home/lluis/mambaforge/envs/calckk/lib/python3.9/site-packages/mycalc/"]
 run.omit = ["src/mycalc/__init__.py"]
-run.relative = true
+run.relative_files = true
