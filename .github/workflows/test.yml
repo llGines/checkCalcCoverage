@@ -1,17 +1,16 @@
-name: test
+name: Coverage test
 on:
   push:
     branches:
       - main
-  pull_request: [] 
-
+      - master
 jobs:
   coverage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.head_ref }}S
       - uses: actions/setup-python@v4
         with:
           python-version: "3.9"
