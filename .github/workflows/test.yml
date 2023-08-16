@@ -1,9 +1,9 @@
-name: Coverage
+name: Coverage test
 on:
   push:
     branches:
       - main
-      - master
+  pull_request: [] 
 jobs:
   coverage:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
       - name: Test with pytest
         run: |
           pytest -vv --cov-config=pyproject.toml ./test --cov=mycalc --cov-report xml:coverage.xml 
-        name: toDel
+      - name: toDel
         run: cat coverage.xml
       - name: Get Cover 
         uses: orgoro/coverage@v3.1
@@ -27,7 +27,7 @@ jobs:
           thresholdModified: 0.5
           thresholdAll: 0.5
           thresholdNew: 0.5
-          coverageFile: coverage.xml
+          coverageFile: /home/runner/work/checkCalcCoverage/checkCalcCoverage/coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
 
       
