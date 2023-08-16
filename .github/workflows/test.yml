@@ -27,7 +27,7 @@ jobs:
           thresholdModified: 0.5
           thresholdAll: 0.5
           thresholdNew: 0.5
-          coverageFile: coverage.xml
+          coverageFile: /home/runner/work/checkCalcCoverage/checkCalcCoverage/coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
 
       
