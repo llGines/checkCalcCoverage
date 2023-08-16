@@ -29,4 +29,4 @@ where = ["src"]
 [tool.coverage]
 #source = ["/home/lluis/mambaforge/envs/calckk/lib/python3.9/site-packages/mycalc/"]
 run.omit = ["src/mycalc/__init__.py"]
-run.relative_files = false
+run.relative_files = true
