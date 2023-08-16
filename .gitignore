@@ -14,7 +14,7 @@ iPronics-PRL.iml
 misc.xml
 workspace.xml
 *.iml
-*.xml
+#*.xml
 
 # C extensions
 *.so
