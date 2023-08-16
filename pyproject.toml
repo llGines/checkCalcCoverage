@@ -27,6 +27,6 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 where = ["src"]
 
 [tool.coverage]
-run.source = ["src/mycalc"]
+run.source = ["/"]
 run.omit = ["src/mycalc/__init__.py"]
 run.relative_files = true
