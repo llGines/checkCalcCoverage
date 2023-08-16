@@ -17,7 +17,7 @@ class Calclass2:
         return a / b
 
     def power(a):
-        if a < 100:
+        if a > 100:
             print("in")
         return pow(a, 2)
 
