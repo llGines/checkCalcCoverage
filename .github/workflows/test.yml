@@ -1,11 +1,6 @@
 name: test
-# on: [pull_request, push]
-on:
-  push:
-      branches:
-          - master
-          - main
-          - lcov
+on: [pull_request]
+
 jobs:
   coverage:
     runs-on: ubuntu-latest
