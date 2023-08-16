@@ -1,3 +1,0 @@
-[run]
-omit = src/mycalc/__init__.py
-relative_files = True
