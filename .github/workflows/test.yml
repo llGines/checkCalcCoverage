@@ -1,12 +1,8 @@
 name: Coverage test
-on:
-  push:
-    branches:
-      - main
-  pull_request: [] 
+on: [pull_request]
 jobs:
   coverage:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
@@ -22,14 +18,11 @@ jobs:
           pytest --cov=mycalc ./test --cov-report xml:coverage.xml
       - name: toDel
         run: cat coverage.xml
-      - name: Get Cover 
+      - name: Get Cover
         uses: orgoro/coverage@v3.1
         with:
           thresholdModified: 1
           thresholdAll: 1
           thresholdNew: 1
-          coverageFile: coverage.xml 
+          coverageFile: coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      
-
