@@ -1,14 +1,10 @@
 name: Coverage test
-on:
-  push:
-    branches:
-      - main
-  pull_request: []
+on: [pull_request]
 
 jobs:
   coverage:
     #runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: [self-hosted, ubuntu-latest]
     steps:
       - uses: actions/checkout@v3
         with:
