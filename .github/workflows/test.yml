@@ -1,4 +1,5 @@
 name: test
+on: push
 jobs:
   coverage:
     runs-on: ubuntu-latest
@@ -12,13 +13,8 @@ jobs:
       - name: Install module and dependencies
         run: python -m pip install ./
       - name: Test with pytest
-        run: |
-      - name: Get Cove
-          pytest -vv --cov-config=pyproject.toml ./test --cov=mycalc --cov-report xml:coverage.xml 
-       - name: toDel
-         run: cat coverage.xml
-      - name: Get Cover 
-
+        run: pytest -vv --cov-config=pyproject.toml ./test --cov=mycalc --cov-report xml:coverage.xml
+      - name: Get Coverage
         uses: orgoro/coverage@v3.1
         with:
           thresholdModified: 0.5
@@ -26,7 +22,3 @@ jobs:
           thresholdNew: 0.5
           coverageFile: /home/runner/work/checkCalcCoverage/checkCalcCoverage/coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      
-
-
