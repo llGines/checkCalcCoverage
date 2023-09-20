@@ -124,4 +124,4 @@ __pypackages__/
 .ruff_cache/
 
 # github runner
-/actions-runner
+actions-runner/
