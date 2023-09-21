@@ -14,12 +14,13 @@ jobs:
       - name: Install module and dependencies
         run: python -m pip install ./
       - name: Test with pytest
-        run: pytest -vv --cov-config=pyproject.toml ./test --cov=mycalc --cov-report xml:/home/runner/work/checkCalcCoverage/checkCalcCoverage/coverage.xml
+        run: pytest -vv --cov-config=pyproject.toml ./test --cov=mycalc --cov-report xml:coverage.xml
       - name: Get Coverage
         uses: orgoro/coverage@v3.1
         with:
           thresholdModified: 0.5
           thresholdAll: 0.5
+
           thresholdNew: 0.5
-          coverageFile: /home/runner/work/checkCalcCoverage/checkCalcCoverage/coverage.xml
+          coverageFile: coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
