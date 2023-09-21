@@ -1,2 +1,2 @@
 # mycalc
-Project destined to test pytest-cov and Python Coverage capabilities 
+Project destined to test pytest-cov, Python Coverage capabilities and local runner
