@@ -1,5 +1,5 @@
 name: lint
-on: [pull_request, push]
+on: [push, pull_request]
 jobs:
   lint:
     runs-on: self-hosted
