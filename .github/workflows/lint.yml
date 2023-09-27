@@ -4,6 +4,8 @@ jobs:
   lint:
     runs-on: self-hosted
     steps:
+      - name: Install pip
+        run: python -m ensurepip --upgrade
       - name: Install module and dependencies
         run: python -m pip install pipx
       - uses: actions/checkout@v3
