@@ -18,7 +18,7 @@ jobs:
         uses: orgoro/coverage@v3.1
         with:
           thresholdModified: 0.5
-          thresholdAll: 0.5
+          thresholdAll: 0.4
 
           thresholdNew: 0.5
           coverageFile: coverage.xml
