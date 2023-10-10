@@ -3,7 +3,7 @@
 from mycalc import Calclass1 as cal1
 from mycalc import Calclass2 as cal2
 from mycalc import Calclass3 as cal3
-from mycalc import Calclass3 as cal4
+from mycalc import Calclass4 as cal4
 
 
 def test_func():
