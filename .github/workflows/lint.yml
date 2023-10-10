@@ -2,7 +2,7 @@ name: lint
 on: [pull_request, push]
 jobs:
   lint:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       # - name: Install module and dependencies
       #   run: python -m pip install pipx
