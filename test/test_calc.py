@@ -4,13 +4,14 @@ from mycalc import Calclass1 as cal1
 from mycalc import Calclass2 as cal2
 from mycalc import Calclass3 as cal3
 from mycalc import Calclass4 as cal4
-
+from mycalc import Calclass5 as cal5
 
 def test_func():
     assert cal1.suma(2, 3) == 5
     assert cal2.suma(-2, 3) == 1
     assert cal3.suma(0, 3) == 3
     assert cal4.suma(0, 3) == 3
+    assert cal5.suma(0, 3) == 3
 
     assert cal1.subs(8, 3) == 5
     assert cal2.subs(8, 3) == 5
