@@ -1,6 +1,7 @@
 import math
 
-class Calclass1:
+
+class Calclass4:
     # def __init__(self):
 
     def suma(a, b):
