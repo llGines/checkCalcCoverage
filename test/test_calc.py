@@ -6,6 +6,7 @@ from mycalc import Calclass3 as cal3
 from mycalc import Calclass4 as cal4
 from mycalc import Calclass5 as cal5
 
+
 def test_func():
     assert cal1.suma(2, 3) == 5
     assert cal2.suma(-2, 3) == 1
