@@ -18,7 +18,7 @@ class Calclass5:
 
     def power(a):
         if a > 110:
-            print("in")
+            print("IN")
         return pow(a, 2)
 
     def sqrot(a):
