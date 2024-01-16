@@ -1,0 +1,2 @@
+class NotInListError(Exception):
+    pass

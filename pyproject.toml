@@ -1,8 +1,8 @@
 [project]
-name = "mycalc"
+name = "learn_testing"
 dynamic = ["version"]
 
-description = "calclass"
+description = "learn_testing"
 requires-python = ">=3.9"
 authors = [{name="Lluis", email="lluis.gines@ipronics.com"}]
 dependencies = [
@@ -28,5 +28,5 @@ where = ["src"]
 
 [tool.coverage]
 #source = ["/home/lluis/mambaforge/envs/calckk/lib/python3.9/site-packages/mycalc/"]
-run.omit = ["src/mycalc/__init__.py"]
+run.omit = ["src/learn_testing/__init__.py"]
 run.relative_files = true
